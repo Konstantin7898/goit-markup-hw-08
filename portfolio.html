@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>goit-markup-hw-02</title>
+  </head>
+  <body>
+    <header class="header__page">
+      <div class="container header__page">
+        <a href="./" class="header__logo"
+          >Web<span class="header__logo--studio">Studio</span></a
+        >
+        <button
+          type="button"
+          class="header__menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-js-open-menu
+        >
+        
+        <span class="header__menu--burger"></span>
+
+          <!-- <svg
+            width="40px"
+            height="40px"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="header__icon--close"
+              href="./images/symbol-defs6.svg#icon-close_40px"
+            ></use>
+            <use
+              class="header__icon--menu"
+              href="./images/symbol-defs6.svg#icon-menu_40px"
+            ></use>
+          </svg> -->
+        </button>
+
+        <div
+          class="header__content header__content--is-hidden"
+          id="mobile-menu"
+          data-mobile-menu
+        >
+          <nav class="header__nav">
+            <ul class="header__site-nav list">
+              <li class="header__nav-item">
+                <a href="./index.html" class="header__nav-link"> Студия </a>
+              </li>
+              <li class="header__nav-item">
+                <a
+                  href="./portfolio.html"
+                  class="header__nav-link header__nav-link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a href="./" class="header__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header__contact list">
+            <li class="header__contact-item">
+              <a href="info@devstudio.com" class="header__contact-link">
+                <svg class="header__contact-icon" width="16px" height="12px">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header__contact-item">
+              <a href="+380961111111" class="header__contact-link">
+                <svg class="header__contact-icon" width="10px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-Vector1"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <div class="header__social">
+            <a href="Instagram" class="header__social-link">Instagram</a>
+            <span class="header__social-divider"></span>
+            <a href="Instagram" class="header__social-link">Twitter</a>
+            <span class="header__social-divider"></span>
+            <a href="Instagram" class="header__social-link">Facebook</a>
+            <span class="header__social-divider"></span>
+            <a href="Instagram" class="header__social-link">LinkedIn</a>
+            <span class="header__social-divider"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- портфолио -->
+      <section class="portfolio">
+        <div class="container portfolio__heading">
+          <h1 class="portfolio__title--hidden">Список Портфолио</h1>
+          <ul class="portfolio__list list">
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button">Все</button>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button">Веб-сайты</button>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button">
+                Приложения
+              </button>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button">Дизайн</button>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container">
+          <ul class="flex__list list">
+            <li class="flex__element">
+              <a class="flex__link">
+                <div class="flex__frame">
+                  <picture>
+                    <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/flex-desktop1x.jpg 1x,
+                      ./images/flex-desktop2x.jpg 2x
+                    "
+                  />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/flex-tablet1x.jpg 1x,
+                      ./images/flex-tablet2x.jpg 2x
+                    "
+                  />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/flex-mobile1x.jpg 1x,
+                        ./images/flex-mobile2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/techno.png" alt="Веб-сайты" />
+                  </picture>
+                  <p class="flex__thumb">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="flex__wrapper">
+                  <h3 class="flex__title">Технокряк</h3>
+                  <p class="flex__link--port">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="flex__element">
+              <a class="flex__link">
+                <div class="flex__frame">
+                  <picture>
+                    <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/flex2-desktop1x.jpg 1x,
+                      ./images/flex2-desktop2x.jpg 2x
+                    "
+                  />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/flexa-tablet1x.jpg 1x,
+                      ./images/flexa-tablet2x.jpg 2x
+                    "
+                  />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/flexa-mobile1x.jpg 1x,
+                        ./images/flexa-mobile2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/disign.png" alt="Дизайн" />
+                  </picture>
+                  <p class="flex__thumb">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="flex__wrapper">
+                  <h3 class="flex__title">Постер New Orlean vs Golden Star</h3>
+                  <p class="flex__link--port">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="flex__element">
+              <a class="flex__link">
+                <div class="flex__frame">
+                  <picture>
+                    <picture>
+                      <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/flex3-desktop1x.jpg 1x,
+                        ./images/flex3-desktop2x.jpg 2x
+                      "
+                    />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/flex3-tablet1x.jpg 1x,
+                      ./images/flex3-tablet2x.jpg 2x
+                    "
+                  />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/flex3-mobile1x.jpg 1x,
+                        ./images/flex3-mobile2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/App.png" alt="Приложение" />
+                  </picture>
+                  <p class="flex__thumb">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="flex__wrapper">
+                  <h3 class="flex__title">Ресторан Seafood</h3>
+                  <p class="flex__link--port">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="flex__element">
+              <a class="flex__link">
+                <div class="flex__frame">
+                  <div class="flex__frame">
+                    <picture>
+                      <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/flex4-desktop1x.jpg 1x,
+                        ./images/flex4-desktop2x.jpg 2x
+                      "
+                    />
+                      <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/flex4-tablet1x.jpg 1x,
+                      ./images/flex4-tablet2x.jpg 2x
+                    "
+                  />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/flex4-mobile1x.jpg 1x,
+                          ./images/flex4-mobile2x.jpg 2x
+                        "
+                      />
+                      <img
+                          src="./images/marketing.png"
+                          alt="Маркетинг"
+                        />
+                    </picture>
+                  <p class="flex__thumb">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="flex__wrapper">
+                  <h3 class="flex__title">Проект Prime</h3>
+                  <p class="flex__link--port">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="flex__element">
+              <a class="flex__link">
+                <div class="flex__frame">
+                  <picture>
+                    <picture>
+                      <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/flex5-desktop1x.jpg 1x,
+                        ./images/flex5-desktop2x.jpg 2x
+                      "
+                    />
+                      <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/flex5-tablet1x.jpg 1x,
+                      ./images/flex5-tablet2x.jpg 2x
+                    "
+                  />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/flex5-mobile1x.jpg 1x,
+                        ./images/flex5-mobile2x.jpg 2x
+                      "
+                    />
+                  <img
+                    src="./images/kirpich.png"
+                    alt="Приложение"
+                  />
+                  </picture>
+                  <p class="flex__thumb">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="flex__wrapper">
+                  <h3 class="flex__title">Проект Boxes</h3>
+                  <p class="flex__link--port">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="flex__element">
+              <a class="flex__link">
+                <div class="flex__frame">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/flex6-desktop1x.jpg 1x,
+                        ./images/flex6-desktop2x.jpg 2x
+                      "
+                    />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/flex6-tablet1x.jpg 1x,
+                      ./images/flex6-tablet2x.jpg 2x
+                    "
+                  />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/flex6-mobile1x.jpg 1x,
+                        ./images/flex6-mobile2x.jpg 2x
+                      "
+                    />
+                  <img src="./images/monitor.png" alt="Веб-сайты"  />
+                  </picture>
+                  <p class="flex__thumb">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="flex__wrapper">
+                  <h3 class="flex__title">Inspiration has no Borders</h3>
+                  <p class="flex__link--port">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="flex__element">
+              <a class="flex__link">
+                <div class="flex__frame">
+                  <picture>
+                    <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/flex7-desktop1x.jpg 1x,
+                      ./images/flex7-desktop2x.jpg 2x
+                    "
+                  />
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/flex7-tablet1x.jpg 1x,
+                      ./images/flex7-tablet2x.jpg 2x
+                    "
+                  />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/flex7-mobile1x.jpg 1x,
+                        ./images/flex7-mobile2x.jpg 2x
+                      "
+                    />
+                  <img src="./images/book.png" alt="Дизайн"  />
+                  </picture>
+                  <p class="flex__thumb">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="flex__wrapper">
+                  <h3 class="flex__title">Издание Limited Edition</h3>
+                  <p class="flex__link--port">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="flex__element">
+              <a class="flex__link">
+                <div class="flex__frame">
+                  <div class="flex__frame">
+                    <picture>
+                      <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/flex8-desktop1x.jpg 1x,
+                      ./images/flex8-desktop2x.jpg 2x
+                    "
+                  />
+                      <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/flex8-tablet1x.jpg 1x,
+                        ./images/flex8-tablet2x.jpg 2x
+                      "
+                    />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/flex8-mobile1x.jpg 1x,
+                          ./images/flex8-mobile2x.jpg 2x
+                        "
+                      />
+                  <img src="./images/lab.png" alt="Маркетинг" />
+                    </picture>
+                  <p class="flex__thumb">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="flex__wrapper">
+                  <h3 class="flex__title">Проект LAB</h3>
+                  <p class="flex__link--port">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="flex__element">
+              <a class="flex__link">
+                <div class="flex__frame">
+                  <picture>
+                    <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/flex9-desktop1x.jpg 1x,
+                      ./images/flex9-desktop2x.jpg 2x
+                    "
+                  />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/flex9-tablet1x.jpg 1x,
+                        ./images/flex9-tablet2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/flex9-mobile1x.jpg 1x,
+                        ./images/flex9-mobile2x.jpg 2x
+                      "
+                    />
+                  <img src="./images/comp.png" alt="Приложение" />
+                  </picture>
+                  <p class="flex__thumb">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="flex__wrapper">
+                  <h3 class="flex__title">Growing Business</h3>
+                  <p class="flex__link--port">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Футер-->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__wrapper">
+          <a href="./" class="footer__logo"
+            >Web<span class="footer__studio">Studio</span></a
+          >
+
+          <address>
+            <ul class="footer__contact list">
+              <li class="footer__address">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="footer__address">
+                <a href="info@example.com" class="footer-info__link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer__address--contact">
+                <a href="+380991111111" class="footer-info__link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer__wrapper--block">
+          <p class="footer__invite">присоединяйтесь</p>
+          <ul class="footer__block--social list">
+            <li class="footer-social__item">
+              <a href="#" class="footer-social__icon">
+                <svg width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social__item">
+              <a href="#" class="footer-social__icon">
+                <svg width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social__item">
+              <a href="#" class="footer-social__icon">
+                <svg width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social__item">
+              <a href="#" class="footer-social__icon">
+                <svg width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__group">
+          <p class="footer__subcribe">Подпишитесь на рассылку</p>
+          <form class="footer__form">
+            <input
+              class="footer__input"
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer__button" data-modal-open>
+              <span class="footer__button--telegram">Подписаться</span>
+              <svg width="24px" height="24px">
+                <use href="./images/symbol-defs4.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./JS/mobile-menu.js"></script>
+  </body>
+</html>
