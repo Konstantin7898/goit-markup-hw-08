@@ -831,6 +831,7 @@ summary {
 
 @media screen and (max-width: 767px) {
   .container {
+    width: 480px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1097,6 +1098,7 @@ textarea {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -2738,7 +2740,27 @@ textarea {
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
-  padding: 20px 0px 20px 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .flex__wrapper {
+    padding: 20px 0px 20px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex__wrapper {
+    padding: 20px 24px 20px 24px;
+  }
+  .flex__wrapper--tablet {
+    padding: 20px 24px 56px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex__wrapper {
+    padding: 20px 0px 20px 24px;
+  }
 }
 
 .flex__title {
