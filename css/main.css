@@ -1380,6 +1380,9 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
+  .comand__item {
+    width: 450px;
+  }
   .comand__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1387,6 +1390,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .comand__item {
+    width: 354px;
     margin-bottom: 30px;
   }
   .comand__item:nth-child(2n + 1) {
@@ -1395,6 +1399,9 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
+  .comand__item {
+    width: 270px;
+  }
   .comand__item:not(:last-child) {
     margin-right: 30px;
   }
