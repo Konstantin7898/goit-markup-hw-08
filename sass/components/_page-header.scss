@@ -20,6 +20,10 @@
 }
 
 .header__page > .container {
+  @media screen and (max-width: 479px) {
+    width: 320px;
+  }
+
   @media screen and (max-width: 767px) {
     max-width: 480px;
     padding-top: 0;
@@ -365,7 +369,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -433,6 +437,9 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  @media screen and (max-width: 479px) {
+    width: 320px;
+  }
 
   @media screen and (max-width: 767px) {
     width: 480px;
