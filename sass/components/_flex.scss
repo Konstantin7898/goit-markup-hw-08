@@ -57,7 +57,9 @@
 }
 
 .flex__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   position: relative;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -112,10 +114,8 @@
     padding: 20px 0px 20px 24px;
   }
   @media screen and (min-width: 768px) {
-    padding: 20px 24px 20px 24px;
-    &--tablet {
-      padding: 20px 24px 56px 24px;
-    }
+    padding: 20px 24px;
+    flex-grow: 1;
   }
 
   @media screen and (min-width: 1200px) {
