@@ -2,6 +2,10 @@
   background-color: $main-bg-color;
   letter-spacing: 0.03em;
 
+  @media screen and (max-width: 480px) {
+    width: 480px;
+  }
+
   @media screen and (max-width: 767px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -21,6 +25,10 @@
 .footer__container {
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 480px) {
+    width: 480px;
+  }
 
   @media screen and (max-width: 767px) {
     width: 480px;

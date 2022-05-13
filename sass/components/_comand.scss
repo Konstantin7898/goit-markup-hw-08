@@ -1,5 +1,8 @@
 .comand {
   background-color: $button-bg-color;
+  @media screen and (max-width: 480px) {
+    width: 480px;
+  }
 
   @media screen and (max-width: 767px) {
     padding-top: 60px;
