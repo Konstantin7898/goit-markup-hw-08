@@ -757,7 +757,7 @@ summary {
     display: block;
   }
   .header__content-wrapper {
-    min-width: 480px;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -790,6 +790,13 @@ summary {
             transform: translateY(100%);
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -837,7 +844,6 @@ summary {
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 480px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -972,12 +978,6 @@ textarea {
     height: 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header-mobile2x.jpg");
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-mobile2x.jpg");
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .main {
-    width: 480px;
   }
 }
 
@@ -1140,7 +1140,7 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .advantages__item {
-    width: 450px;
+    max-width: 450px;
   }
   .advantages__item:not(:last-child) {
     margin-bottom: 30px;
@@ -1303,12 +1303,6 @@ textarea {
   background-color: #f5f4fa;
 }
 
-@media screen and (max-width: 480px) {
-  .comand {
-    width: 480px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .comand {
     padding-top: 60px;
@@ -1341,7 +1335,6 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .comand__title {
-    width: 480px;
     margin-top: 0;
     margin-bottom: 30px;
   }
@@ -1399,7 +1392,7 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .comand__item {
-    width: 450px;
+    max-width: 450px;
   }
   .comand__item:not(:last-child) {
     margin-bottom: 30px;
@@ -1523,7 +1516,6 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .clients__list {
-    width: 480px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1571,6 +1563,12 @@ textarea {
 .clients__box:hover, .clients__box:focus {
   fill: #2196f3;
   border-color: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .clients__box:nth-child(2n + 1) {
+    margin-left: 30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1658,7 +1656,6 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .clients__title {
-    width: 480px;
     margin-bottom: 30px;
   }
 }
@@ -1679,12 +1676,6 @@ textarea {
 .footer {
   background-color: #2f303a;
   letter-spacing: 0.03em;
-}
-
-@media screen and (max-width: 480px) {
-  .footer {
-    width: 480px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1713,15 +1704,8 @@ textarea {
   margin-right: auto;
 }
 
-@media screen and (max-width: 480px) {
-  .footer__container {
-    width: 480px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .footer__container {
-    width: 480px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1959,7 +1943,7 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .footer__input {
-    width: 450px;
+    max-width: 450px;
     height: 50px;
     margin-bottom: 20px;
   }
@@ -2181,7 +2165,7 @@ textarea {
 @media screen and (max-width: 767px) {
   .modal {
     position: fixed;
-    min-width: 450px;
+    width: 100%;
     left: 50%;
     top: 20px;
     -webkit-transform: translate(-50%) scale(1);
@@ -2599,6 +2583,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .portfolio__item:nth-child(3) {
+    margin-bottom: 15px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .portfolio__item:not(:last-child) {
     margin-right: 8px;
@@ -2670,6 +2660,9 @@ textarea {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
 }
 
@@ -2680,7 +2673,7 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .flex__element {
-    width: 450px;
+    max-width: 450px;
   }
   .flex__element:not(:last-child) {
     margin-bottom: 30px;

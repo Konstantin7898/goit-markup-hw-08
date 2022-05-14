@@ -20,6 +20,9 @@
 }
 
 .header__page > .container {
+  @media screen and (max-width: 479px) {
+  }
+
   @media screen and (max-width: 767px) {
     max-width: 480px;
     padding-top: 0;
@@ -385,7 +388,7 @@
       display: block;
     }
     &-wrapper {
-      min-width: 480px;
+      width: 100%;
       margin: 0 auto;
     }
   }
@@ -413,6 +416,9 @@
 }
 
 .header__social {
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+  }
   @media screen and (max-width: 767px) {
     display: flex;
 
@@ -447,9 +453,11 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  @media screen and (max-width: 479px) {
+  }
 
   @media screen and (max-width: 767px) {
-    width: 480px;
+    // width: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;

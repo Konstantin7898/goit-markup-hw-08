@@ -17,7 +17,7 @@
 }
 
 .advantages__list {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 767px) {
   }
 
   @media screen and (min-width: 768px) {
@@ -45,16 +45,15 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  @media screen and (max-width: 479px) {
+  }
 
   @media screen and (max-width: 767px) {
-    @media screen and (max-width: 479px) {
-    }
-    width: 450px;
+    max-width: 450px;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
-
   @media screen and (min-width: 768px) {
     width: 354px;
     &:nth-child(2n + 1) {

@@ -15,9 +15,11 @@
 
 .clients__list {
   cursor: pointer;
+  @media screen and (max-width: 479px) {
+  }
 
   @media screen and (max-width: 767px) {
-    width: 480px;
+    // width: 480px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -56,6 +58,12 @@
   &:focus {
     fill: $accent-color;
     border-color: $accent-color;
+  }
+
+  @media screen and (max-width: 479px) {
+    &:nth-child(2n + 1) {
+      margin-left: 30px;
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -131,7 +139,7 @@
   letter-spacing: 0.03em;
 
   @media screen and (max-width: 767px) {
-    width: 480px;
+    // width: 480px;
     margin-bottom: 30px;
   }
 

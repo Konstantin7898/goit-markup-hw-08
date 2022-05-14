@@ -30,8 +30,7 @@
           aria-controls="mobile-menu"
           data-js-open-menu
         >
-        
-        <span class="header__menu--burger"></span>
+          <span class="header__menu--burger"></span>
 
           <!-- <svg
             width="40px"
@@ -54,51 +53,59 @@
           id="mobile-menu"
           data-mobile-menu
         >
-          <nav class="header__nav">
-            <ul class="header__site-nav list">
-              <li class="header__nav-item">
-                <a href="./index.html" class="header__nav-link"> Студия </a>
-              </li>
-              <li class="header__nav-item">
+          <div class="header__content-wrapper">
+            <nav class="header__nav">
+              <ul class="header__site-nav list">
+                <li class="header__nav-item">
+                  <a
+                    href="./index.html"
+                    class="header__nav-link header__nav-link"
+                  >
+                    Студия
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="./portfolio.html" class="header__nav-link header__nav-link--current"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a href="./" class="header__nav-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="header__contact list">
+              <li class="header__contact-item">
                 <a
-                  href="./portfolio.html"
-                  class="header__nav-link header__nav-link--current"
-                  >Портфолио</a
+                  href="info@devstudio.com"
+                  class="header__contact-link header__contact--mail"
                 >
+                  <svg class="header__contact-icon" width="16px" height="12px">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
               </li>
-              <li class="header__nav-item">
-                <a href="./" class="header__nav-link">Контакты</a>
+              <li class="header__contact-item">
+                <a href="+380961111111" class="header__contact-link">
+                  <svg class="header__contact-icon" width="10px" height="16px">
+                    <use href="./images/symbol-defs.svg#icon-Vector1"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
               </li>
             </ul>
-          </nav>
-
-          <ul class="header__contact list">
-            <li class="header__contact-item">
-              <a href="info@devstudio.com" class="header__contact-link">
-                <svg class="header__contact-icon" width="16px" height="12px">
-                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="header__contact-item">
-              <a href="+380961111111" class="header__contact-link">
-                <svg class="header__contact-icon" width="10px" height="16px">
-                  <use href="./images/symbol-defs.svg#icon-Vector1"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-          <div class="header__social">
-            <a href="Instagram" class="header__social-link">Instagram</a>
-            <span class="header__social-divider"></span>
-            <a href="Instagram" class="header__social-link">Twitter</a>
-            <span class="header__social-divider"></span>
-            <a href="Instagram" class="header__social-link">Facebook</a>
-            <span class="header__social-divider"></span>
-            <a href="Instagram" class="header__social-link">LinkedIn</a>
-            <span class="header__social-divider"></span>
+            <div class="header__social">
+              <a href="Instagram" class="header__social-link">Instagram</a>
+              <span class="header__social-divider"></span>
+              <a href="Instagram" class="header__social-link">Twitter</a>
+              <span class="header__social-divider"></span>
+              <a href="Instagram" class="header__social-link">Facebook</a>
+              <span class="header__social-divider"></span>
+              <a href="Instagram" class="header__social-link">LinkedIn</a>
+              <span class="header__social-divider"></span>
+            </div>
           </div>
         </div>
       </div>
