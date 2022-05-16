@@ -20,11 +20,8 @@
 }
 
 .header__page > .container {
-  @media screen and (max-width: 479px) {
-  }
-
   @media screen and (max-width: 767px) {
-    max-width: 480px;
+    width: 100%;
     padding-top: 0;
     padding-bottom: 0;
     flex-flow: wrap;
@@ -43,7 +40,7 @@
   align-items: center;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
+    margin-bottom: auto;
 
     display: flex;
     justify-content: space-between;
@@ -199,6 +196,10 @@
     margin-bottom: 64px;
     display: flex;
     flex-direction: column-reverse;
+    &-thumb {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -207,6 +208,9 @@
     align-items: flex-start;
     text-align: center;
     flex-direction: column;
+    &-thumb {
+      display: flex;
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -273,6 +277,11 @@
     padding-bottom: 32px;
     font-size: 14px;
     line-height: 1.14;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 .header__contact--mail {
@@ -367,7 +376,7 @@
 .header__content {
   @media screen and (max-width: 767px) {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: space-between;
 
     padding: 48px 40px;
@@ -375,6 +384,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -388,8 +399,7 @@
       display: block;
     }
     &-wrapper {
-      width: 100%;
-      margin: 0 auto;
+      max-width: 480px;
     }
   }
 
@@ -405,6 +415,17 @@
       display: flex;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+
+    &-wrapper {
+      height: 100%;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: space-between;
+    }
+  }
 }
 
 .header__content--is-hidden {
@@ -412,6 +433,7 @@
     opacity: 0;
     transform: translateY(100%);
     transition: all 0.4s ease;
+    height: 100%;
   }
 }
 
@@ -423,7 +445,6 @@
     display: flex;
 
     align-items: center;
-    margin-bottom: 48px;
 
     &-link {
       font-weight: 500;

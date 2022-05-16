@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  justify-content: center;
+
   cursor: pointer;
 
   // @media screen and (max-width: 767px) {
@@ -104,6 +104,20 @@
   transition-property: opacity, transform;
   transition-duration: 250ms;
   transition-timing-function: linear;
+  @media screen and (max-width: 767px) {
+    padding: 77px 24px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
+  @media screen and (max-width: 479px) {
+    padding: 10px 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .flex__wrapper {
